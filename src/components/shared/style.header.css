@@ -1,4 +1,5 @@
 /* Header Styles*/
+
 .capsule {
   display: flex;
   justify-content: space-between;
@@ -21,6 +22,7 @@ ul {
 li {
   margin: 0 20px;
   padding: 0 30px;
+  color:black;
 }
 
 a,
