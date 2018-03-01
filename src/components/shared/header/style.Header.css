@@ -1,0 +1,137 @@
+/* Header Styles*/
+
+.capsule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  width: 100vw;
+  height: 60px;
+  background: white;
+}
+
+ul {
+  padding-left: 0;
+  display: flex;
+  list-style: none outside none;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  color:black;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.Nav-profile, .Nav-logo{
+  height: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 1rem;
+}
+
+.Nav-logo {
+  display: inline;
+  animation: Nav-logo-spin infinite 20s linear;
+}
+
+@keyframes Nav-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/*
+ALOMST MID SIZE SCREEN!
+*/
+
+@media only screen and (max-width: 1045px) {
+
+
+  .capsule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    width: 100vw;
+    height: 60px;
+    background: white;
+  }
+
+  ul {
+    display: flex;
+    list-style: none outside none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    color:black;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: black;
+  }
+
+  .cartitem {
+    position: relative;
+    float: right;
+  }
+
+  .Nav-profile, .Nav-logo{
+    height: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: .5rem;
+  }
+
+  .Nav-logo {
+    display: inline;
+    animation: Nav-logo-spin infinite 20s linear;
+  }
+
+  @keyframes Nav-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+}
+@media only screen and (max-width: 700px) {
+
+  ul {
+    padding-left: 0;
+    display: flex;
+    list-style: none outside none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    margin: 0 .25rem;
+    padding: 0 .25rem;
+    color:black;
+  }
+
+  .Nav-profile, .Nav-logo{
+    height: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: .5rem;
+  }
+
+}

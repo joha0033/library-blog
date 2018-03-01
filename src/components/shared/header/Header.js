@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.Header.css'
-import logo from '../../assets/booksSVG.svg';
-import profile from '../../assets/profile.svg';
+import logo from '../../../assets/booksSVG.svg';
+import profile from '../../../assets/profile.svg';
 
 class Header extends React.Component{
   constructor(){
