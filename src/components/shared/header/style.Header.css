@@ -78,7 +78,7 @@ ALOMST MID SIZE SCREEN!
   li {
     margin: 0 .5rem;
     padding: 0 .5rem;
-    color:black;
+    color:red;
   }
 
   a,
@@ -114,7 +114,7 @@ ALOMST MID SIZE SCREEN!
 @media only screen and (max-width: 700px) {
 
   ul {
-    padding-left: 0;
+    padding-top: .35em;
     display: flex;
     list-style: none outside none;
     justify-content: center;
@@ -128,8 +128,8 @@ ALOMST MID SIZE SCREEN!
   }
 
   .Nav-profile, .Nav-logo{
-    height: 1rem;
-    margin-left: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
     margin-right: 2rem;
     margin-top: .5rem;
   }
