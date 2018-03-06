@@ -4,6 +4,7 @@ import './App.css';
 import styles from './App.css';
 import Header from '../shared/header/Header.js'
 import Footer from '../shared/footer/Footer.js'
+import LibraryList from '../libraryList/libraryList.js'
 
 class App extends Component {
   render() {
@@ -14,9 +15,7 @@ class App extends Component {
           <h1 className={styles.title}>Welcome to JSL</h1>
           <h2 className={styles.subtitle}> Where we explore JS libraries</h2>
         </header>
-        <p className={styles.intro}>
-          Well get started soon enough...
-        </p>
+        <LibraryList />
         <Footer />
       </div>
     );

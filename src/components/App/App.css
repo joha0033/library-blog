@@ -1,9 +1,10 @@
 .App {
+  width:auto;
   text-align: left;
-  height: 500px;
 }
 
 .header {
+  border-radius: 25px;
   align-items: center;
   margin: 3% auto;
   width: 80%;
@@ -28,14 +29,12 @@
 .intro {
   align-items: center;
   font-size: large;
-  height: 350px;
 }
 
 @media only screen and (max-width: 500px) {
 
   .App {
     text-align: center;
-    height: 500px;
   }
 
   .header {
@@ -43,7 +42,6 @@
     margin: 3% auto;
     width: 90%;
     background-color: #222;
-    height: 7em;
     padding:.5em;
     padding-bottom: .5em;
     color: white;
@@ -61,6 +59,5 @@
 
   .intro {
     font-size: medium;
-    height: 500px;
   }
 }
