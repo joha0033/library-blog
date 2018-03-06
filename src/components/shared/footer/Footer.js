@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.Footer.css'
+import styles from './style.Footer.css'
 
 class Header extends React.Component{
   constructor(){
@@ -9,12 +9,8 @@ class Header extends React.Component{
 
   render() {
     return(
-      <footer className="footer">
+      <footer className={styles.footer}>
         <div>
-          <ul>
-            <li>this</li>
-            <li>that</li>
-          </ul>
           <p>Made with some skills by AustinRJ</p>
         </div>
       </footer>
