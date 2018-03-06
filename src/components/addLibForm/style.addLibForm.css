@@ -1,0 +1,35 @@
+.form{
+  display: block;
+  border-radius: 25px;
+  align-items: center;
+  margin: 3% auto;
+  width: 80%;
+  background-color: #333;
+  padding:.5em;
+  padding: 5%;
+  margin: 5%;
+  color:white;
+}
+
+.header{
+  align-items: center;
+}
+
+
+
+/*
+ALOMST MID SIZE SCREEN!
+*/
+
+@media only screen and (max-width: 500px) {
+
+  .form{
+    border-radius: 25px;
+    align-items: center;
+    margin: 3% auto;
+    width: 90%;
+    background-color: #333;
+    color: white;
+  }
+
+}
