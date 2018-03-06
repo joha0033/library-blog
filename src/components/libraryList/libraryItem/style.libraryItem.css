@@ -1,7 +1,9 @@
+/*REDO BREAK POINTS FOR MEDIA QUERIERS*/
+
 .container{
   border-radius: 25px;
   margin: 5%;
-  height: 25em;
+  height: 26em;
   background-color:white;
 }
 
@@ -31,7 +33,68 @@
   padding-right:10%;
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 1365px)
+{
+
+  .container{
+    border-radius: 25px;
+    margin: 3%;
+    height: 25em;
+    background-color:white;
+  }
+
+  .imageContainer{
+    width:45%;
+    float:left;
+  }
+
+  .contentContainer{
+    display:inline;
+    float:right;
+    width:45%;
+    padding-top:2%;
+  }
+
+}
+
+@media only screen and (max-width: 1023px)
+
+{
+  /*h1{
+    color:red;
+  }*/
+  .container{
+    border-radius: 25px;
+    color:red;
+    margin: 5%;
+    height: 16em;
+    background-color:white;
+  }
+  .content{
+    display:block;
+    padding-right: 10%;
+    height: 7.7em;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .imageContainer{
+    width:50%;
+    float:left;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+
+  .contentContainer{
+    display:inline;
+    float:right;
+    width:50%;
+  }
+
+}
+
+@media only screen and (max-width: 775px) {
 
   .container{
     border-radius: 25px;
@@ -62,4 +125,24 @@
     overflow: hidden;
   }
 
+}
+
+@media only screen and (max-width: 375px){
+  /*p{
+    visibility: hidden;
+  }*/
+  .container{
+    padding-top: -14%;
+    border-radius: 25px;
+    height:15em;
+    background-color:white;
+  }
+  .content{
+    display:block;
+    padding-right: 10%;
+    height: 5.7em;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
