@@ -1,61 +1,63 @@
 /* Header Styles*/
 
-.capsule {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .capsule {
+    padding-top: .25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.nav {
-  width: 100vw;
-  height: 60px;
-  background: white;
-}
+  .nav {
+    width: 100vw;
+    height: 60px;
+    background: white;
+  }
 
-.navUL {
-  padding-left: 0;
-  display: flex;
-  list-style: none outside none;
-  justify-content: center;
-  align-items: center;
-}
+  .navUL {
+    padding-left: 0;
+    display: flex;
+    list-style: none outside none;
+    justify-content: center;
+    align-items: center;
+  }
 
-.navLinks {
-  margin: 0 1rem;
-  padding: 0 1rem;
-  color:black;
-}
+  .navLinks {
+    margin: 0 1rem;
+    padding: 0 1rem;
+    color:black;
+  }
 
-.navA,
-.navA:visited,
-.navA:active {
-  text-decoration: none;
-  color: black;
-}
+  .navA,
+  .navA:visited,
+  .navA:active {
+    text-decoration: none;
+    color: black;
+  }
 
-.profile, .navLogo{
-  height: 2rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 1rem;
-}
+  .profile, .navLogo{
+    height: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    /*margin-top: 1rem;*/
+  }
 
-.navLogo {
-  display: inline;
-  animation: navLogo-spin infinite 20s linear;
-}
+  .navLogo {
+    display: inline;
+    animation: navLogo-spin infinite 20s linear;
+  }
 
-@keyframes navLogo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  @keyframes navLogo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 
 
 /*
 ALOMST MID SIZE SCREEN!
 */
 
-@media only screen and (max-width: 1045px) {
+/*@media only screen and (max-width: 1045px) {*/
+  @media only screen and (max-width: 839px) {
 
 
   .capsule {
@@ -96,12 +98,13 @@ ALOMST MID SIZE SCREEN!
 
   .profile, .navLogo{
     height: 2rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
     margin-top: .5rem;
   }
 
   .navLogo {
+    margin-left: 5em;
     display: inline;
     animation: navLogo-spin infinite 20s linear;
   }
@@ -112,7 +115,14 @@ ALOMST MID SIZE SCREEN!
   }
 
 }
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 480px) {
+  .capsule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  }
 
   .navUL {
     padding-top: .35em;

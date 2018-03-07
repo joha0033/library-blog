@@ -15,7 +15,15 @@ class App extends Component {
 
         <header className={styles.header}>
           <h1 className={styles.title}>Welcome to JSL</h1>
-          <h2 className={styles.subtitle}> Where we explore JS libraries</h2>
+          <div className={styles.parent}>
+            <div className={styles.left}>
+                <h2 className={styles.subtitle}> Where we explore JS libraries</h2>
+            </div>
+            <div className={styles.right}>
+              <button className={styles.button}>add library</button>
+            </div>
+          </div>
+
         </header>
         <AddLibForm />
         <LibraryList />
