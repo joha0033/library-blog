@@ -1,5 +1,4 @@
-.form{
-  display: block;
+/*.form{
   border-radius: 25px;
   align-items: center;
   margin: 3% auto;
@@ -9,10 +8,47 @@
   padding: 5%;
   margin: 5%;
   color:white;
+}*/
+.flex{
+  background-color: #333;
+  display: flex;
+  width: 87%;
+  display: none;
+}
+
+.right{
+  float:right;
+}
+.column {
+  display:none!important;
+  display: none;
+  flex-direction: column;
+  border-radius: 25px;
+  display: flex;
+  width: 18em;
+  margin: 2% auto;
+  color:white;
+}
+.button{
+  width: 50%;
+  margin-left:25%;
+
 }
 
 .header{
   align-items: center;
+}
+p {
+  margin: 0.4em;
+}
+label {
+    margin-right: 0.5em;
+}
+input {
+    max-width: 95%;
+}
+input:not([type="submit"]) {
+    width: 15em;
 }
 
 
@@ -23,13 +59,6 @@ ALOMST MID SIZE SCREEN!
 
 @media only screen and (max-width: 500px) {
 
-  .form{
-    border-radius: 25px;
-    align-items: center;
-    margin: 3% auto;
-    width: 90%;
-    background-color: #333;
-    color: white;
-  }
+/*some responsize stuff...*/
 
 }

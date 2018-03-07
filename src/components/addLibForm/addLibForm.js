@@ -1,5 +1,5 @@
 import React from 'react'
-// import styles from './style.addLibForm.css'
+import styles from './style.addLibForm.css'
 
 class AddLibForm extends React.Component {
     constructor(props) {
@@ -55,43 +55,60 @@ class AddLibForm extends React.Component {
             isValid: Object.keys(errors).length === 0
         };
     }
-    //
-    // handleChange(event) {
-    //   this.setState({content: event.target.value});
-    // }
-    //
-    // handleSubmit(event) {
-    //   alert('A name was submitted: ' + this.state.name);
-    //   event.preventDefault();
-    // }
+
 
     render() {
       const {input, blurred} = this.state;
       const {errors, isValid} = this.validate();
       return (
-        <form onSubmit={(e) => { e.preventDefault();return console.log(this.state.input);}}>
-          <label>
-            Name:
-            <input
-              name="title"
-              type="text"
-              value={input.title}
-              onBlur={() => this.handleBlur('title')}
-              onChange={e => this.handleInputChange({title: e.target.value})}/>
-              {blurred.title && !!errors.title && <span>{errors.title}</span>}
-          </label>
-          <label>
-            Content:
-            <input
-              name="content"
-              type="text"
-              value={input.content}
-              onBlur={() => this.handleBlur('content')}
-              onChange={e => this.handleInputChange({content: e.target.value})}/>
-              {blurred.content && !!errors.content && <span>{errors.content}</span>}
-          </label>
-          <input type="submit" value="Submit" disabled={!isValid}/>
-        </form>
+
+
+
+        <div className="flex">
+          <form className={styles.column} onSubmit={(e) => { e.preventDefault();return console.log(this.state.input);}}>
+
+            <h2> Add a library! </h2>
+
+            <p>
+              <label>
+                Name:
+                <input
+                  className={styles.right}
+                  name="title"
+                  type="text"
+                  value={input.title}
+                  onBlur={() => this.handleBlur('title')}
+                  onChange={e => this.handleInputChange({title: e.target.value})}/>
+              </label>
+              <br/>
+            </p>
+
+            <p>
+              <label>
+                Content:
+                <input
+                  className={styles.right}
+                  name="content"
+                  type="text"
+                  value={input.content}
+                  onBlur={() => this.handleBlur('content')}
+                  onChange={e => this.handleInputChange({content: e.target.value})}/>
+              </label>
+              <br/>
+            </p>
+            <p>
+                <input className={styles.button}type="submit" value="Submit" disabled={!isValid}/>
+            </p>
+
+
+            <br/>
+            {blurred.content && !!errors.content && <span>{errors.content}</span>}
+            <br/>
+            {blurred.title && !!errors.title && <span>{errors.title}</span>}
+
+          </form>
+        </div>
+
       );
     }
   }
