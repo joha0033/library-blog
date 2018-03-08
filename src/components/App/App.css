@@ -1,0 +1,114 @@
+.App {
+  width:auto;
+  text-align: left;
+}
+
+.addButton{
+  margin-top: 1.5em;
+}
+
+.parent{
+  display:flex;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+.left{
+  width: 25%;
+}
+
+.right{
+  flex:1;
+  margin-left: 20em;
+}
+
+.header {
+  border-radius: 25px;
+  align-items: center;
+  margin: 3% auto;
+  width: 80%;
+  background-color: #333;
+  height: 7em;
+  padding:.5em;
+  padding-left: 5em;
+  padding-bottom: 1em;
+  color: white;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.subtitle {
+  width: 25em;
+  margin-bottom: 5%;
+  padding-bottom:5%;
+  font-size: 1em;
+}
+
+.intro {
+  align-items: center;
+  font-size: large;
+}
+
+.button{
+  margin-top: 1%;
+  margin-left: 60%;
+  width: 12em;
+  height: auto;
+  color: white;
+  background-color: #333;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .App {
+    text-align: center;
+  }
+
+  .parent{
+    width: auto;
+    display:flex;
+    justify-content: space-between;
+    display: inline-block;
+  }
+
+  .left{
+    width: 0%;
+  }
+
+  .right{
+    padding: .8em;
+    margin-right: 8em;
+  }
+
+  .button{
+    position:absolute;
+    width: 12em;
+    margin-left: 0%;
+  }
+
+  .header {
+    align-items: center;
+    margin: 3% auto;
+    width: 90%;
+    background-color: #222;
+    padding:.5em;
+    padding-bottom: .5em;
+    color: white;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .subtitle {
+    width: 20em;
+    padding-top: -5%;
+    font-size: 1em;
+  }
+
+  .intro {
+    font-size: medium;
+  }
+}

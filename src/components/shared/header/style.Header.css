@@ -1,0 +1,148 @@
+/* Header Styles*/
+
+  .capsule {
+    padding-top: .25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    width: 100vw;
+    height: 60px;
+    background: white;
+  }
+
+  .navUL {
+    padding-left: 0;
+    display: flex;
+    list-style: none outside none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLinks {
+    margin: 0 1rem;
+    padding: 0 1rem;
+    color:black;
+  }
+
+  .navA,
+  .navA:visited,
+  .navA:active {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+  }
+
+  .profile, .navLogo{
+    height: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .navLogo {
+    display: inline;
+    animation: navLogo-spin infinite 20s linear;
+  }
+
+  @keyframes navLogo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+
+/*
+ALOMST MID SIZE SCREEN!
+*/
+
+/*@media only screen and (max-width: 1045px) {*/
+  @media only screen and (max-width: 839px) {
+
+
+  .capsule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    width: 100vw;
+    height: 60px;
+    background: white;
+  }
+
+  .navUL {
+    display: flex;
+    list-style: none outside none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLinks {
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    color:black;
+  }
+
+  .navA,
+  .navA:visited,
+  .navA:active {
+    text-decoration: none;
+    color: black;
+  }
+
+  .cartitem {
+    position: relative;
+    float: right;
+  }
+
+  .profile, .navLogo{
+    height: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: .5rem;
+  }
+
+  .navLogo {
+    margin-left: 5em;
+    display: inline;
+    animation: navLogo-spin infinite 20s linear;
+  }
+
+  @keyframes navLogo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .capsule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .2em;
+  }
+
+  .navUL {
+    padding-top: .35em;
+    display: flex;
+    list-style: none outside none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLinks {
+    margin: 0 .25rem;
+    padding: 0 .25rem;
+    color:black;
+  }
+
+  .profile, .navLogo{
+    height: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    margin-top: .5rem;
+  }
+
+}

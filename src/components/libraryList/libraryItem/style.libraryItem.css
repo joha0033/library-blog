@@ -1,0 +1,135 @@
+/*REDO BREAK POINTS FOR MEDIA QUERIERS*/
+
+.container{
+  border-radius: 20px;
+  margin: 5%;
+  height: 26em;
+  background-color:white;
+}
+
+.imageContainer{
+  width:50%;
+  float:left;
+}
+.image{
+  border-radius: 25px;
+  margin: 5%;
+  width:75%;
+}
+
+.contentContainer{
+  display:inline;
+  float:right;
+  width:50%;
+  padding-top:5%;
+}
+.title{
+
+  color:black;
+}
+
+.content{
+  color:black;
+  padding-right:10%;
+}
+
+
+@media only screen and (max-width: 1024px)
+
+{
+  /*h1{
+    color:red;
+  }*/
+  .container{
+    border-radius: 25px;
+    color:red;
+    margin: 5%;
+    height: 16em;
+    background-color:white;
+    padding-bottom: 2em;
+  }
+  .content{
+    display:block;
+    padding-right: 10%;
+    height: 7.7em;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+
+  .imageContainer{
+    width:40%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+
+  .contentContainer{
+    display:inline;
+    float:right;
+    width:50%;
+    margin-bottom: 2em;
+  }
+
+}
+
+@media only screen and (max-width: 839px) {
+
+  .container{
+    border-radius: 25px;
+    height:20em;
+    background-color:white;
+  }
+
+  .imageContainer{
+    visibility: hidden;
+  }
+
+  .image{
+    width:1%;
+  }
+
+  .contentContainer{
+    display:inline-block;
+    width:90%;
+    margin-top: -2em;
+  }
+
+  .title{
+    margin-right:10%;
+    color:black;
+  }
+
+  .content{
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+
+  .container{
+    padding-top: -3em;
+    border-radius: 25px;
+    height:13em;
+    background-color:white;
+  }
+
+  .contentContainer{
+    margin-top: -2em;
+    display:inline-block;
+    width:90%;
+
+  }
+
+  .content{
+    padding-top:-10%;
+    display:block;
+    padding-right: 10%;
+    height: 5.7em;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
