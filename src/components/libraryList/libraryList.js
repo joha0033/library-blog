@@ -11,9 +11,6 @@ class LibraryList extends React.Component{
     return (
       <div className={styles.list}>
         <LibraryItem />
-        <LibraryItem />
-        <LibraryItem />
-        <LibraryItem />
       </div>
     )
   }

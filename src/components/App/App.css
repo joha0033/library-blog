@@ -3,9 +3,14 @@
   text-align: left;
 }
 
+.addButton{
+  margin-top: 1.5em;
+}
+
 .parent{
   display:flex;
-  justify-content: space-between
+  justify-content: space-between;
+  display: inline-block;
 }
 
 .left{
@@ -13,8 +18,8 @@
 }
 
 .right{
-  padding-right: 70%;
-  flex:1 ;
+  flex:1;
+  margin-left: 20em;
 }
 
 .header {
@@ -35,6 +40,7 @@
 }
 
 .subtitle {
+  width: 25em;
   margin-bottom: 5%;
   padding-bottom:5%;
   font-size: 1em;
@@ -45,10 +51,41 @@
   font-size: large;
 }
 
+.button{
+  margin-top: 1%;
+  margin-left: 60%;
+  width: 12em;
+  height: auto;
+  color: white;
+  background-color: #333;
+}
+
 @media only screen and (max-width: 480px) {
 
   .App {
     text-align: center;
+  }
+
+  .parent{
+    width: auto;
+    display:flex;
+    justify-content: space-between;
+    display: inline-block;
+  }
+
+  .left{
+    width: 0%;
+  }
+
+  .right{
+    padding: .8em;
+    margin-right: 8em;
+  }
+
+  .button{
+    position:absolute;
+    width: 12em;
+    margin-left: 0%;
   }
 
   .header {
@@ -62,12 +99,12 @@
   }
 
   .title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .subtitle {
-    margin-bottom: 5%;
-    padding-bottom:5%;
+    width: 20em;
+    padding-top: -5%;
     font-size: 1em;
   }
 

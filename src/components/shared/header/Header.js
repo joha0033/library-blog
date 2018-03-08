@@ -4,13 +4,15 @@ import logo from '../../../assets/booksSVG.svg';
 import profile from '../../../assets/profile.svg';
 
 class Header extends React.Component{
-  constructor(){
-    super()
-    this.state = {}
+  constructor(props){
+    super(props)
+    this.state = {
+      showForm: false
+    }
   }
 
   render() {
-
+    // console.log(this.state.showForm);
     return(
       <nav className={styles.nav}>
         <div className={styles.capsule}>
@@ -20,7 +22,7 @@ class Header extends React.Component{
                <a className={styles.navA} href="#home">Home</a>
              </li>
              <li className={styles.navLinks}>
-               <a className={styles.navA} href="#about">About</a>
+               <a className={styles.navA} href="#about" onClick={this.someFn}>Add Lib</a>
              </li>
              <li className={styles.navLinks}>
                <a className={styles.navA} href="#contact">Contact</a>

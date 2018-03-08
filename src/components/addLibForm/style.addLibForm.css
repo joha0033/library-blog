@@ -11,7 +11,7 @@
 }
 
 .column {
-  display:none!important;
+  /*display:none!important;*/
   display: none;
   flex-direction: column;
   border-radius: 25px;
@@ -24,7 +24,6 @@
 .button{
   width: 50%;
   margin-left:25%;
-
 }
 
 .header{
@@ -36,9 +35,9 @@ p {
 label {
     margin-right: 0.5em;
 }
-input {
+.right {
     max-width: 95%;
 }
-input:not([type="submit"]) {
+.right:not([type="submit"]) {
     width: 15em;
 }

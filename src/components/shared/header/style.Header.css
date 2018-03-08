@@ -32,13 +32,13 @@
   .navA:active {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
   }
 
   .profile, .navLogo{
     height: 2rem;
     margin-left: 10rem;
     margin-right: 10rem;
-    /*margin-top: 1rem;*/
   }
 
   .navLogo {
@@ -121,7 +121,7 @@ ALOMST MID SIZE SCREEN!
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1em;
+    padding-top: .2em;
   }
 
   .navUL {

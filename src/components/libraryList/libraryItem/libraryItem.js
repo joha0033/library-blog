@@ -2,42 +2,58 @@ import React from 'react'
 import styles from './style.libraryItem.css'
 
 class LibraryItem extends React.Component{
+  constructor(){
+    super()
+    this.state = {
+      libraries: [
+        {
+          name: "Wallaby.js",
+          content: "this is for evaluating inline, its awesome!",
+          img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        },
+        {
+          name: "Redux",
+          content: "this is for managing state, its confusing!",
+          img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        },
+        {
+          name: "Moment",
+          content: "this is for evaluating time in Javascript, its easy to use!",
+          img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        }
+      ]
+    }
+  }
   render() {
     return (
-      <div className={styles.container}>
-
-        <div className={styles.imageContainer}>
-
-          <img alt="containerPic" className={styles.image} src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"/>
-
-        </div>
-
-        <div className={styles.contentContainer}>
-
-          <div className={styles.title}>
-            <h1>The first LIB</h1>
-          </div>
-
-          <div >
-            <p className={styles.content}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.
-            </p>
-          </div>
-
-        </div>
-
+      <div>
+      {
+        this.state.libraries.map((library) =>
+            // CONTAINER
+            <div className={styles.container}>
+              {/* LEFT/IMAGE*/}
+              <div className={styles.imageContainer}>
+                  <img alt="containerPic" className={styles.image} src={library.img}/>
+              </div>
+              {/* RIGHT/NAME + CONTENT */}
+              <div className={styles.contentContainer}>
+                {/* NAME */}
+                <div className={styles.title}>
+                  <h1>{library.name}</h1>
+                </div>
+                {/* CONTENT */}
+                <div>
+                  <p className={styles.content}>
+                    {library.content}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )
+        }
       </div>
-
     )
   }
-
 }
 
 export default LibraryItem

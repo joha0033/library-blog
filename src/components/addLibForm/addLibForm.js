@@ -7,13 +7,21 @@ class AddLibForm extends React.Component {
       this.state = {
             input: {
                 title: "",
-                content: ""
+                content: "",
+                imgURL: ""
             },
             blurred: {
                 title: false,
-                content: false
-            }
+                content: false,
+                imgURL: ""
+            },
+            formIsDisplayed: this.props.toggle
         };
+      }
+
+    onClick () {
+      // this.setState.formIsDisplayed = !this.state.formIsDisplayed
+      console.log(this.state.formIsDisplayed);
     }
 
     handleInputChange(newPartialInput) {
@@ -50,22 +58,40 @@ class AddLibForm extends React.Component {
             errors.content = 'Content is required';
         }
 
+        if (!input.imgURL) {
+            errors.content = 'Image URL is required';
+        }
+
         return {
             errors,
             isValid: Object.keys(errors).length === 0
         };
     }
 
+    // handleAddTodoItem() {
+    //   this.state.libraries.push(this.state.textvalue)
+    //   this.setState(
+    //     this.state
+    //   )
+    //   this.state
+    //   console.log(this.state.value)
+    // }
 
     render() {
       const {input, blurred} = this.state;
       const {errors, isValid} = this.validate();
+
+
       return (
 
-
-
         <div className="flex">
-          <form className={styles.column} onSubmit={(e) => { e.preventDefault();return console.log(this.state.input);}}>
+          <form
+            className={styles.column}
+            onSubmit={(e) =>
+              { e.preventDefault();
+                this.setState({})
+                return console.log(this.state.input);
+                }}>
 
             <h2> Add a library! </h2>
 
@@ -97,7 +123,20 @@ class AddLibForm extends React.Component {
               <br/>
             </p>
             <p>
-                <input className={styles.button}type="submit" value="Submit" disabled={!isValid}/>
+              <label>
+                Image URL:
+                <input
+                  className={styles.right}
+                  name="imgURL"
+                  type="text"
+                  value={input.imgURL}
+                  onBlur={() => this.handleBlur('imgURL')}
+                  onChange={e => this.handleInputChange({imgURL: e.target.value})}/>
+              </label>
+              <br/>
+            </p>
+            <p>
+                <input className={styles.button} type="submit" value="Submit" disabled={!isValid}/>
             </p>
 
 
@@ -108,7 +147,6 @@ class AddLibForm extends React.Component {
 
           </form>
         </div>
-
       );
     }
   }

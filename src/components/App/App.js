@@ -8,24 +8,40 @@ import LibraryList from '../libraryList/libraryList.js'
 import AddLibForm from '../addLibForm/addLibForm.js'
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      showForm: false
+    }
+  }
+
+  toggleHidden () {
+    this.setState({
+      showForm: !this.state.showForm
+    })
+  }
+
+
   render() {
+
     return (
       <div className={styles.App}>
-        <Header />
-
+        <Header/>
         <header className={styles.header}>
           <h1 className={styles.title}>Welcome to JSL</h1>
           <div className={styles.parent}>
             <div className={styles.left}>
                 <h2 className={styles.subtitle}> Where we explore JS libraries</h2>
+                <button className={styles.addButton}onClick={this.toggleHidden.bind(this)}>
+                  Add Library
+                </button>
             </div>
-            <div className={styles.right}>
-              <button className={styles.button}>add library</button>
-            </div>
+
           </div>
 
         </header>
-        <AddLibForm />
+
+        { this.state.showForm ? <AddLibForm/> : null }
         <LibraryList />
         <Footer />
       </div>
