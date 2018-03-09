@@ -1,27 +1,25 @@
 import React from 'react'
 import styles from './style.libraryList.css'
 import LibraryItem from './libraryItem/libraryItem.js'
-// import AddLibForm from './addLibForm/addLibForm.js'
 
 class LibraryList extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      // showForm: false,
       libraries: [
         {
           title: "Wallaby.js",
-          content: "this is for evaluating inline, its awesome!",
+          content: "Lorem ipsum dolor amet sartorial snackwave celiac thundercats, retro plaid marfa tumeric small batch pok pok health goth microdosing cardigan kitsch. Blog occupy blue bottle, put a bird on it VHS seitan live-edge small batch cornhole. Try-hard scenester kombucha schlitz seitan pop-up tumblr sustainable sartorial trust fund master cleanse YOLO four loko organic williamsburg. Offal ugh coloring book kinfolk man braid.",
           imgURL: "https://avatars0.githubusercontent.com/u/9921462?s=200&v=4"
         },
         {
           title: "Redux",
-          content: "this is for managing state, its confusing!",
+          content: "Lorem ipsum dolor amet sartorial snackwave celiac thundercats, retro plaid marfa tumeric small batch pok pok health goth microdosing cardigan kitsch. Blog occupy blue bottle, put a bird on it VHS seitan live-edge small batch cornhole. Try-hard scenester kombucha schlitz seitan pop-up tumblr sustainable sartorial trust fund master cleanse YOLO four loko organic williamsburg.",
           imgURL: "https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-L5K1I1WsuQMZ8ecEuWg%2Favatar.png?generation=1518623866348435&alt=media"
         },
         {
           title: "Moment",
-          content: "this is for evaluating time in Javascript, its easy to use!",
+          content: "Retro plaid marfa tumeric small batch pok pok health goth microdosing cardigan kitsch. Blog occupy blue bottle, put a bird on it VHS seitan live-edge small batch cornhole. Try-hard scenester kombucha schlitz seitan pop-up tumblr sustainable sartorial trust fund master cleanse YOLO four loko organic williamsburg. Offal ugh coloring book kinfolk man braid.",
           imgURL: "https://www.sydjs.com/images/showbag/moment.jpg"
         }
       ],
@@ -62,14 +60,13 @@ class LibraryList extends React.Component{
     }))
   }
 
-  //TURN INTO SWITCH STATEMENT!
   validate() {
       const errors = {};
       const {input} = this.state;
 
       if (!input.title) {
           errors.title = 'Title is required';
-      } //validate email
+      }
 
       if (!input.content) {
           errors.content = 'Content is required';
@@ -96,11 +93,6 @@ class LibraryList extends React.Component{
     const {errors, isValid} = this.validate();
 
     return (
-      <div>
-        {/* <button className={styles.addButton} onClick={this.toggleHidden.bind(this)}>
-          Add Library
-        </button> */}
-
         <div className={styles.list}>
           { this.props.form ? <div className="flex">
             <form
@@ -108,7 +100,6 @@ class LibraryList extends React.Component{
               onSubmit={(e) =>
                 { e.preventDefault();
                   this.setState({})
-                  console.log(this.state.input);
                   return this.state.libraries.push(this.state.input)
                   }}>
 
@@ -147,13 +138,15 @@ class LibraryList extends React.Component{
                     type="text"
                     value={input.imgURL}
                     onBlur={() => this.handleBlur('imgURL')}
-                    onChange={e => this.handleInputChange({imgURL: e.target.value})}/>
+                    onChange={e => this.handleInputChange({imgURL: e.target.value})}
+                  />
+
                 </label>
                 <br/>
 
-              <p>
-                  <input className={styles.button} type="submit" value="Submit" disabled={!isValid}/>
-              </p>
+
+                  <input touchend="submit" className={styles.button} type="submit" value="Submit" disabled={!isValid}/>
+
 
               {/* CSS THESE TO BE INLINE WITH INPUTS */}
               <br/>
@@ -168,7 +161,6 @@ class LibraryList extends React.Component{
           </div> : null }
           <LibraryItem items={this.state.libraries}/>
         </div>
-      </div>
     )
   }
 }

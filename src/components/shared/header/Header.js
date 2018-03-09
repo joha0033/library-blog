@@ -4,22 +4,9 @@ import logo from '../../../assets/booksSVG.svg';
 import profile from '../../../assets/profile.svg';
 
 class Header extends React.Component{
-  // constructor(props){
-  //   super(props)
-  //   this.state = {
-  //     showForm: false
-  //   }
-  // }
-
-  // toggleHidden () {
-  //   this.setState({
-  //     showForm: !this.state.showForm
-  //   })
-  // }
 
 
   render() {
-    // console.log(this.state.showForm);
     return(
       <nav className={styles.nav}>
         <div className={styles.capsule}>
