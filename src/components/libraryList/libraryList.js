@@ -67,11 +67,11 @@ class LibraryList extends React.Component{
       if (!input.title) {
           errors.title = 'Title is required';
       }
-
+      //Limit number of character also
       if (!input.content) {
           errors.content = 'Content is required';
       }
-
+      //add regex for URL
       if (!input.imgURL) {
           errors.imgURL = 'Image URL is required';
       }
@@ -119,7 +119,7 @@ class LibraryList extends React.Component{
 
                 <label>
                   Content:
-                  <input
+                  <input //text area? I would like about 140 chars or less...
                     className={styles.right}
                     name="content"
                     type="text"
