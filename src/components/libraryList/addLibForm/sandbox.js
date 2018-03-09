@@ -68,14 +68,6 @@ class AddLibForm extends React.Component {
         };
     }
 
-    // handleAddTodoItem() {
-    //   this.state.libraries.push(this.state.textvalue)
-    //   this.setState(
-    //     this.state
-    //   )
-    //   this.state
-    //   console.log(this.state.value)
-    // }
 
     render() {
       const {input, blurred} = this.state;

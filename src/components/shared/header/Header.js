@@ -4,12 +4,19 @@ import logo from '../../../assets/booksSVG.svg';
 import profile from '../../../assets/profile.svg';
 
 class Header extends React.Component{
-  constructor(props){
-    super(props)
-    this.state = {
-      showForm: false
-    }
-  }
+  // constructor(props){
+  //   super(props)
+  //   this.state = {
+  //     showForm: false
+  //   }
+  // }
+
+  // toggleHidden () {
+  //   this.setState({
+  //     showForm: !this.state.showForm
+  //   })
+  // }
+
 
   render() {
     // console.log(this.state.showForm);
@@ -19,13 +26,7 @@ class Header extends React.Component{
           <img src={logo} className={styles.navLogo} alt="logo"/>
            <ul className={styles.navUL}>
              <li className={styles.navLinks}>
-               <a className={styles.navA} href="#home">Home</a>
-             </li>
-             <li className={styles.navLinks}>
-               <a className={styles.navA} href="#about" onClick={this.someFn}>Add Lib</a>
-             </li>
-             <li className={styles.navLinks}>
-               <a className={styles.navA} href="#contact">Contact</a>
+               <a className={styles.navA} href="#about" onClick={this.props.toggleForm}>Add a Library!</a>
              </li>
            </ul>
              <img src={profile} className={styles.profile} alt="logo"/>

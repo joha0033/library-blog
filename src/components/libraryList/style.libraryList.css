@@ -7,6 +7,52 @@
   padding:.5em;
   color: white;
 }
+.addButton{
+  margin-top: 1.5em;
+}
+
+.flex{
+  background-color: #333;
+  display: flex;
+  width: 87%;
+  display: none;
+}
+
+.right{
+  float:right;
+}
+
+.column {
+  /*display:none!important;*/
+  display: none;
+  flex-direction: column;
+  border-radius: 25px;
+  display: flex;
+  width: 18em;
+  margin: 2% auto;
+  color:white;
+}
+
+.button{
+  width: 50%;
+  margin-left:25%;
+}
+
+.header{
+  align-items: center;
+}
+p {
+  margin: 0.4em;
+}
+label {
+    margin-right: 0.5em;
+}
+.right {
+    max-width: 95%;
+}
+.right:not([type="submit"]) {
+    width: 15em;
+}
 
 /*
 ALOMST MID SIZE SCREEN!

@@ -5,7 +5,6 @@ import styles from './App.css';
 import Header from '../shared/header/Header.js'
 import Footer from '../shared/footer/Footer.js'
 import LibraryList from '../libraryList/libraryList.js'
-import AddLibForm from '../addLibForm/addLibForm.js'
 
 class App extends Component {
   constructor(props){
@@ -21,28 +20,20 @@ class App extends Component {
     })
   }
 
-
   render() {
 
     return (
       <div className={styles.App}>
-        <Header/>
+        <Header toggleForm ={this.toggleHidden.bind(this)}/>
         <header className={styles.header}>
           <h1 className={styles.title}>Welcome to JSL</h1>
           <div className={styles.parent}>
             <div className={styles.left}>
                 <h2 className={styles.subtitle}> Where we explore JS libraries</h2>
-                <button className={styles.addButton}onClick={this.toggleHidden.bind(this)}>
-                  Add Library
-                </button>
             </div>
-
           </div>
-
         </header>
-
-        { this.state.showForm ? <AddLibForm/> : null }
-        <LibraryList />
+        <LibraryList form={this.state.showForm}/>
         <Footer />
       </div>
     );
