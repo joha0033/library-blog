@@ -94,6 +94,7 @@ class LibraryList extends React.Component{
 
     return (
         <div className={styles.list}>
+          {/* TEST IF CLICK WORKS FOR TERNARY STATEMENT / TOGGLES FORM*/}
           { this.props.form ? <div className="flex">
             <form
               className={styles.column}

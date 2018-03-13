@@ -16,7 +16,7 @@ it('Header renders', () => {
 it('renders header links', () => {
   const header = shallow(<Header />)
   let length = header.find('li').length
-  expect(length).toBe(3)
+  expect(length).toBe(1)
 })
 
 it('renders a logo', () => {

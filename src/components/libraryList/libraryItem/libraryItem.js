@@ -8,15 +8,15 @@ class LibraryItem extends React.Component{
       <div>
       {
         // PASSING STATE FROM PARENT/LIBRARY-LIST
-        this.props.items.map((library) =>
+        this.props.items.map((library, i) =>
             // CONTAINER
-            <div className={styles.container}>
+            <div className={styles.container} key={i}>
               {/* LEFT/IMAGE*/}
               <div className={styles.imageContainer}>
-                  <img alt="containerPic" className={styles.image} src={library.imgURL}/>
+                  <img key={i} alt="containerPic" className={styles.image} src={library.imgURL}/>
               </div>
               {/* RIGHT/NAME + CONTENT */}
-              <div className={styles.contentContainer}>
+              <div key={i} className={styles.contentContainer}>
                 {/* NAME */}
                 <div className={styles.title}>
                   <h1>{library.title}</h1>
