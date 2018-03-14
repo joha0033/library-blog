@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a div the rendered item mapping function produces image 1`] = `
+<div>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      <img
+        alt="containerPic"
+        className={undefined}
+        src="https://avatars0.githubusercontent.com/u/9921462?s=200&v=4"
+      />
+    </div>
+    <div
+      className={undefined}
+    >
+      <div
+        className={undefined}
+      >
+        <h1>
+          Wallaby.js
+        </h1>
+      </div>
+      <div>
+        <p
+          className={undefined}
+        >
+          Lorem ipsum dolor amet sartorial snackwave celiac thundercats, retro plaid marfa tumeric small batch pok pok health goth microdosing cardigan kitsch. Blog occupy blue bottle, put a bird on it VHS seitan live-edge small batch cornhole. Try-hard scenester kombucha schlitz seitan pop-up tumblr sustainable sartorial trust fund master cleanse YOLO four loko organic williamsburg. Offal ugh coloring book kinfolk man braid.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      <img
+        alt="containerPic"
+        className={undefined}
+        src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-L5K1I1WsuQMZ8ecEuWg%2Favatar.png?generation=1518623866348435&alt=media"
+      />
+    </div>
+    <div
+      className={undefined}
+    >
+      <div
+        className={undefined}
+      >
+        <h1>
+          Redux
+        </h1>
+      </div>
+      <div>
+        <p
+          className={undefined}
+        >
+          Lorem ipsum dolor amet sartorial snackwave celiac thundercats, retro plaid marfa tumeric small batch pok pok health goth microdosing cardigan kitsch. Blog occupy blue bottle, put a bird on it VHS seitan live-edge small batch cornhole. Try-hard scenester kombucha schlitz seitan pop-up tumblr sustainable sartorial trust fund master cleanse YOLO four loko organic williamsburg.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      <img
+        alt="containerPic"
+        className={undefined}
+        src="https://www.sydjs.com/images/showbag/moment.jpg"
+      />
+    </div>
+    <div
+      className={undefined}
+    >
+      <div
+        className={undefined}
+      >
+        <h1>
+          Moment
+        </h1>
+      </div>
+      <div>
+        <p
+          className={undefined}
+        >
+          Retro plaid marfa tumeric small batch pok pok health goth microdosing cardigan kitsch. Blog occupy blue bottle, put a bird on it VHS seitan live-edge small batch cornhole. Try-hard scenester kombucha schlitz seitan pop-up tumblr sustainable sartorial trust fund master cleanse YOLO four loko organic williamsburg. Offal ugh coloring book kinfolk man braid.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
